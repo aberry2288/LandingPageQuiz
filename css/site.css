@@ -9,14 +9,56 @@
 html,
 body {
     height: 100%;
+    font-family: 'Roboto', 'sans serif';
+    font-size: 12px;
+
+
+}
+
+.mainTitle {
+    font-family: 'Racing Sans One', 'sans serif';
+    font-size: 4.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--cf-light)
+}
+
+.subTitle {
+    font-family: 'Fira sans', 'sans serif';
+    font-size: 1.5rem;
+    letter-spacing: .05;
+    line-height: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+a {
+    font-family: 'Roboto', 'sans serif';
+    
+}
+
+.rocketLogo {
+    height: 45px
+}
+
+
+.footer {
+
+    color: var(--cf-light)
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
+    background-color: var(--cf-darkblue);
+    background-image: url("/LandingPageQuiz/img/LandingPage_576.png");
     background-position: top right;
-    background-repeat: no-repeat;
+    background-repeat: round;
+    background-size: cover;
+
+
+
 }
 
 .content {
@@ -25,4 +67,94 @@ body {
 
 .footer {
     flex-shrink: 0;
+    padding-top: .5rem;
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .mainHeader {
+        background-image: url(/LandingPageQuiz/img/LandingPage_768.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .mainTitle {
+        font-size: 4.5rem;
+        line-height: 3rem;
+    }
+
+    .subTitle {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .mainHeader {
+        background-image: url(/LandingPageQuiz/img/LandingPage_992.png);
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        
+    }
+
+    .mainTitle {
+        font-size: 5.2rem;
+        line-height: 3rem;
+        padding-bottom: .5rem;
+    }
+
+    .subTitle {
+        font-size: 1.9rem;
+        line-height: 1.4rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mainHeader {
+        background-image: url(/LandingPageQuiz/img/LandingPage_1200.png);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mainTitle {
+        font-size: 5.8rem;
+        line-height: 3.4rem;
+    }
+
+    .subTitle {
+        font-size: 2.3rem;
+        line-height: 1.8rem;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mainHeader {
+        background-image: url(/LandingPageQuiz/img/LandingPage_1400.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+    }
+
+    .mainTitle {
+        font-size: 6.5rem;
+        line-height: 4.1rem;
+    }
+
+    .subTitle {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
 }
