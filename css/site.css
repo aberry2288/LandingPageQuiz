@@ -51,7 +51,7 @@ a {
 body {
     display: flex;
     flex-direction: column;
-    
+    background-color: var(--cf-darkblue);
     background-image: url("/LandingPageQuiz/img/LandingPage_576.png");
     background-position: top right;
     background-repeat: round;
