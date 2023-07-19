@@ -5,6 +5,19 @@
     --cf-highlight: #fae100;
 }
 
+.nav-item a {
+    color: var(--cf-light);
+}
+
+.nav-item a:hover {
+    color: var(--cf-highlight) !important;
+}
+
+.btn-warning {
+    background-color: var(--cf-highlight);
+    border-color: var(--cf-highlight);
+}
+
 
 html,
 body {
@@ -12,24 +25,27 @@ body {
     font-family: 'Roboto', 'sans serif';
     font-size: 12px;
 
+}
 
+.myNavbar {
+    color: var(--cf-light) !important;
 }
 
 .mainTitle {
     font-family: 'Racing Sans One', 'sans serif';
-    font-size: 4.5rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
     text-transform: uppercase;
     color: var(--cf-light)
 }
 
 .subTitle {
     font-family: 'Fira sans', 'sans serif';
-    font-size: 1.5rem;
-    letter-spacing: .05;
-    line-height: 1.5rem;
-    font-weight: 300;
-    text-align: center;
+    font-size: .95rem;
+    letter-spacing: .06rem;
+    line-height: 1.2rem;
+    font-weight: 200;    
+    text-transform: uppercase;
 
 }
 
@@ -45,7 +61,7 @@ a {
 
 .footer {
 
-    color: var(--cf-light)
+    color: var(--cf-light);
 }
 
 body {
@@ -53,12 +69,15 @@ body {
     flex-direction: column;
     background-color: var(--cf-darkblue);
     background-image: url("/img/LandingPage_576.png");
-    background-position: top right;
-    background-repeat: round;
-    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat; 
+}
 
-
-
+#cta-container {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 .content {
@@ -73,88 +92,92 @@ body {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .mainHeader {
+    body {
         background-image: url(/img/LandingPage_768.png);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
+        background-position: top center;     
+        }
 
     .mainTitle {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         line-height: 3rem;
     }
 
     .subTitle {
-        font-size: 1.8rem;
-        font-weight: 300;
-        line-height: 1.7rem;
+        font-size: 1.3rem;
+        font-weight: 200;
+        letter-spacing: 0.1rem;
+    }
+
+    #cta-container {
+        padding-bottom: 0rem;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .mainHeader {
-        background-image: url(/img/LandingPage_992.png);
-        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        
+    body {
+        background-image: url(/img/LandingPage_992.png);     
+        background-position: top right;
     }
 
-    .mainTitle {
-        font-size: 5.2rem;
-        line-height: 3rem;
-        padding-bottom: .5rem;
-    }
 
-    .subTitle {
-        font-size: 1.9rem;
-        line-height: 1.4rem;
+    #cta-container {
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 0;
+        
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .mainHeader {
+    body {
         background-image: url(/img/LandingPage_1200.png);
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size: cover;
+                       
     }
 
-    .mainTitle {
-        font-size: 5.8rem;
-        line-height: 3.4rem;
-    }
-
-    .subTitle {
-        font-size: 2.3rem;
-        line-height: 1.8rem;
-    }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .mainHeader {
+    body {
         background-image: url(/img/LandingPage_1400.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
+ }
 
+ .mainTitle {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.subTitle {
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.06rem;
+}
+
+ #cta-container {
+    padding-left: 3rem;
+ }
+
+}
+
+/* xx-large deveices */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(/img/LandingPage_1920.png);        
+        background-size: cover;
     }
 
     .mainTitle {
-        font-size: 6.5rem;
-        line-height: 4.1rem;
+        font-size: 5rem;
+        line-height: 4rem;
     }
 
     .subTitle {
-        font-size: 2.5rem;
-        line-height: 2.2rem;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 0.06rem;
     }
+    
+
 }

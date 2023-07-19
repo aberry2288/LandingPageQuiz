@@ -30,10 +30,10 @@
 
 <body>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent myNavbar">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="#"> <img class="rocketLogo p-2" src="/img/RocketLogo.png"
+            <a class="navbar-brand myNavbar" href="#"> <img class="rocketLogo p-2" src="/img/RocketLogo.png"
                     alt="">Rocket Motivation
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -43,36 +43,33 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0 align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active myNavbar" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link myNavbar" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link myNavbar" href="#">About</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--Main Content Section-->
-    <main class="content pt-5 mainTitle mainHeader ">
-        <div class="container-fluid h-100 d-flex align-items-end align-items-sm-center text-start">
-            <div class="row">
-                <div class="col ">
-                    <h2 class="mainTitle">never give up</h2>
-                    <h2 class="mainTitle">on your dreams</h2>
-                    <div class="subTitle text-start">LEARN TO CODE AND START A NEW CAREER!
-                    </div>
-                    <div><a class="btn btn-warning m-3" href="#">Start Today!</a></div>
-                </div>
+    <main class="content pt-5">
+        <div class="container-xxl" id="cta-container">
+            <div class="text-light">
+                <div class="mainTitle">Never give up</div>
+                <div class="mainTitle">On Your Dreams</div>
+                <div class="subTitle">Learn to code and start a new career!</div>
+                <button class="btn btn-warning mt-3">Start Today!</button>
             </div>
-
         </div>
+
     </main>
     <!--Footer Section-->
     <footer class="footer">
-        <div class="container-fluid d-flex justify-content-center py-3 bg-transparent">
+        <div class="container-fluid text-center py-3">
             <span class="text-muted"> &copy; 2023 Rocket Motivation</span>
         </div>
     </footer>
