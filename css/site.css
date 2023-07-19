@@ -52,7 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--cf-darkblue);
-    background-image: url("/LandingPageQuiz/img/LandingPage_576.png");
+    background-image: url("/img/LandingPage_576.png");
     background-position: top right;
     background-repeat: round;
     background-size: cover;
@@ -74,7 +74,7 @@ body {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .mainHeader {
-        background-image: url(/LandingPageQuiz/img/LandingPage_768.png);
+        background-image: url(/img/LandingPage_768.png);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -96,7 +96,7 @@ body {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .mainHeader {
-        background-image: url(/LandingPageQuiz/img/LandingPage_992.png);
+        background-image: url(/img/LandingPage_992.png);
         
         background-repeat: no-repeat;
         background-size: cover;
@@ -119,7 +119,7 @@ body {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .mainHeader {
-        background-image: url(/LandingPageQuiz/img/LandingPage_1200.png);
+        background-image: url(/img/LandingPage_1200.png);
         height: 400px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -139,7 +139,7 @@ body {
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .mainHeader {
-        background-image: url(/LandingPageQuiz/img/LandingPage_1400.png);
+        background-image: url(/img/LandingPage_1400.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-repeat: no-repeat;
